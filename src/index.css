@@ -1,0 +1,145 @@
+:root {
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+}
+
+.expense-item{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0,0, 0.1, 0.3);
+  background-color: #fff;
+  flex-grow: 1;
+}
+.expense-item-container{
+  display: flex;
+  align-items: center;
+  margin: 1rem auto;
+  max-width: 450px;
+  gap: 10px;
+}
+.del-btn{
+  padding: 0.5rem;
+  border-radius: 4px;
+  border: 1px solid #ddd;
+  background-color: #f4f4f4;
+  cursor: pointer;
+  margin: 1rem auto;
+}
+
+i{
+  width: 20px;
+  height: 20px;
+}
+
+.expense-item.positive{
+  border-left:3px solid  green;
+}
+.expense-item.negative{
+  border-right: 3px solid red;
+}
+
+.income1{
+  display: flex;
+  justify-content: space-around;
+  
+  
+  padding: 3rem;
+  margin: 1rem auto;
+  background-color: #fff;
+  border-radius: 20px;
+  box-shadow: 0 2px 8px rgba(0,0, 0, 0.1);
+  max-width: 450px;
+  
+  
+}
+.income,
+.expense{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.income .title,
+.expense .title{
+  font-size: 30px;
+  color: black;
+}
+.income{
+  color: green;
+}
+.expense{
+  color: red;
+}
+
+.balance{
+  margin: 1rem auto;
+  text-align: center;
+}
+
+.block{
+  width: 10px;
+  background-color: #aaa;
+  border-radius: 10px;
+}
+
+.form{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 1rem auto;
+}
+
+.title-input,
+.amount-input ,
+.form-btn{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+   line-height: 20px;
+}
+
+input{
+  height: 40px;
+  width: 300px;
+  border: 3px solid #aaa;
+  border-radius: 10px;
+  margin-top: 20px;
+  font-size: 20px;
+  padding: 5px;
+  box-shadow: 0 2px 8px rgba(0,0, 0, 0.3);
+  outline: none;
+  background-color: #fff;
+}
+
+label{
+  text-align: center;
+  margin-top: 20px;
+}
+
+.form-btn{
+  background:#aaa;
+  display: block;
+  margin: 50px auto;
+  width: fit-content;
+  border: 1px solid white;
+  box-shadow: 0 2px 8px rgba(0,0, 0, 0.3);
+  padding: 14px 50px;
+  border-radius: 6px;
+  text-decoration: none;
+  color: #fff;
+  font-size: medium;
+  cursor: pointer;
+ 
+}
+
+#Error{
+  margin: 0 0 0.75rem 0;
+  font-size: 12px;
+  color: red;
+}
+
+
